@@ -11,10 +11,6 @@ $(document).ready(function () {
     slidesPerView: "auto",
     spaceBetween: 30,
     centeredSlides: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
     loop: true,
   });
 

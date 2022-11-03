@@ -23,14 +23,57 @@
   background: transparent;
   width: 100%;
 }
-.page .page-header .navbar li a {
+.page .page-header .navbar .navbar-nav {
+  position: relative;
+}
+.page .page-header .navbar .navbar-nav li a {
   color: #fff;
 }
+.page .page-header .navbar .navbar-nav li a:hover {
+  color: #fff;
+}
+.page .page-header .navbar .navbar-nav li ul {
+  width: 468px;
+  padding: 30px;
+  top: 50%;
+  left: 50%;
+  background: #ffffff;
+  box-shadow: 2.18px 2.18px 6.54px rgba(150, 184, 188, 0.8);
+  border-radius: 16px;
+  transform: translate(-50%, 15%);
+}
+.page .page-header .navbar .navbar-nav li ul::before {
+  content: "";
+  position: absolute;
+  bottom: 99%;
+  left: 50%;
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.page .page-header .navbar .navbar-nav li ul a li {
+  color: #5cb7b0 !important;
+}
+.page .page-header .navbar .navbar-nav li ul a li h6 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.page .page-header .navbar .navbar-nav li ul a li p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #8e8e93;
+}
 .page .page-header-light {
-  background: #F9FFFD;
+  background: #f9fffd;
 }
 .page .page-header-light .navbar li a {
-  color: #5cb7b0;
+  color: #5cb7b0 !important;
+  text-decoration: none;
+}
+.page .page-header-light .navbar li a:hover {
+  color: #5cb7b0 !important;
 }
 .page .landing {
   height: 100vh;
@@ -233,6 +276,8 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 318px;
+  border-radius: 18px;
 }
 .page .section-wrapper .section-body .card img {
   width: 100%;
@@ -291,4 +336,24 @@
   line-height: 100%;
   text-decoration: none;
   color: #636363;
+}
+.page .page-footer .container-footer {
+  margin-bottom: 20px;
+}
+.page .page-footer .license {
+  padding-top: 10px;
+  border-top: 1px solid #e5e5ea;
+}
+.page .page-footer .license p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.page .page-footer .license a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000;
+  float: right;
 }/*# sourceMappingURL=index.css.map */
